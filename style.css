@@ -632,7 +632,7 @@ footer div {
         max-width: 375px;
     }
     #about_us div {
-        width: 370px;
+        width: 350px;
     }
     nav {
         padding-left: 10px;
@@ -643,13 +643,13 @@ footer div {
     #about_us div img {
         padding-left: 0;
         padding-right: 0;
-        width: 175px;
+        width: 160px;
     }
     #portfolio{
         height: 470px;
     }
     nav ul li {
-        font-size: 16px;
+        font-size: 15px;
     }
     .slider ul li{
         height: 0;
@@ -685,7 +685,8 @@ footer div {
     }
     #about_us p {
         font-size: 13px;
-
+        
+        box-sizing: border-box;
     }
     .left p {
         text-align: left;
@@ -694,6 +695,9 @@ footer div {
     .right p {
         text-align: right;
         padding-right: 10px;
+    }
+    .right h3{
+        padding-left: 200px;
     }
     .copy{
         padding-top: 1px;
