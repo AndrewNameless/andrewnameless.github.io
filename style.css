@@ -640,6 +640,11 @@ footer div {
     #about_us{
         padding-top: 20px;
     }
+    #about_us div img {
+        padding-left: 0;
+        padding-right: 0;
+        width: 175px;
+    }
     #portfolio{
         height: 470px;
     }
