@@ -757,6 +757,7 @@ footer div {
     #about_us div img {
         padding-left: 0;
         padding-right: 0;
+        width: 175px;
     }
     #portfolio {
         height: 400px;
