@@ -1,0 +1,453 @@
+
+body{
+    background-color: #808080;
+    font-family: Tahoma, sans-serif;
+    padding:0;
+    margin:0;
+}
+#container{
+    margin-top: 30px;
+    width: 85%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black; 
+}
+form{
+    width: 80px;
+    float: left;
+
+}
+nav{
+    height: 25px;
+    background-color: #f6f6f6;
+    /*margin-top: -15px;*/
+    border-radius: 3px;
+    margin-bottom: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+nav ul{
+    padding-left: 7px;
+}
+nav ul li a{
+    display: inline-block;
+    padding-left: 7px;
+    
+    
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    padding-right: 30px;
+    
+
+}
+aside{
+    float: right;
+    width:15%;
+    background-color: #fff;
+    height: 650px;
+    position: fixed;
+    right:0;
+}
+
+aside h1{
+    font-size: 21px;
+    text-align: center;
+}
+aside h2{
+    font-size: 12px;
+    text-align: center;
+    background-color: #c2d9f0;
+    padding-bottom: 5px;
+    border-radius: 7px 7px 0 0;
+}
+aside form label{
+    font-size: 10px;
+}
+aside form input{
+    
+    margin: 0;
+}
+aside form div{
+    padding-left: 4px;
+    font-size: 11px;
+    width: 204px;
+}
+legend{
+    width: auto;
+    text-align: center;
+}
+fieldset{
+    border:1px solid grey;
+    margin: 1px;
+}
+select{
+    width: 150px;
+}
+
+.sortby{
+    margin-top: 40px;
+}
+.sortby select{
+    width: 146px;
+}
+.miners{
+    margin-top: 10px;
+    width: 204px;
+}
+.btn{
+    float: right;
+    margin: 5px;
+    width: 40px;
+    height: 30px;
+    padding: 0;
+}
+.activeMiners{
+    text-align: center;
+}
+.hash1{
+    margin: 10px;
+    width: 190px;
+    height: 70px;
+    border-radius: 7px;
+    border: 1px solid #5892d5;
+    background-color: #e9eff8;
+    box-shadow: 4px 4px 1px #c1c1c1;
+}
+.hash2{
+    margin: 10px;
+    width: 190px;
+    height: 70px;
+    border-radius: 7px;
+    border: 1px solid #5892d5;
+    background-color: #ecfaec;
+    box-shadow: 4px 4px 1px #c1c1c1;
+}
+.hash2 h2{
+    background-color: #c4f0c1;
+}
+.navright{
+    float: right;
+    margin: 0;
+    position: fixed;
+    right: 1px;
+    top: 0;
+}
+/*Первый блок*/
+#default{
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 185px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px 1px;
+    background: linear-gradient(to top,#A3CC4F,#f1f9e3);
+}
+#default:hover{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 185px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background:#799AC0;
+}
+.block1{
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 185px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px 1px;
+    background: linear-gradient(to top,#f1e893,#fdfcf0);
+}
+.block1:hover{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 185px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background:#799AC0;
+}
+/*.block1{
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 185px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px 1px;
+    background: linear-gradient(to top,#12b5eb,#e3f8ff);
+}*/
+.block2{
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 185px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px 1px;
+    background: linear-gradient(to top,#FAA31A,#fffcea);
+}
+.block2:hover{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 185px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background:#799AC0;
+}
+.block3{
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 185px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px 1px;
+    background: linear-gradient(to top,#D51B0D,#FFEAEA);
+}
+
+.block3:hover{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 185px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background:#799AC0;
+}    
+ 
+ #сelsius{
+    float: right;
+    color: #FF4C00;
+    font-size: 0.6em;
+
+ }
+
+        
+#texttop{
+    
+    width: 188px;
+    height: 10px;
+    float: left;
+    
+}
+#texttop p{
+
+font-weight: 600;
+overflow: hidden;
+text-overflow: ellipsis;
+font-size: 0.7em;
+margin: 0px;
+padding-left: 1px;
+white-space: nowrap;
+}
+#texttop p:hover{
+    text-align: center;
+    overflow:visible;
+    font-size: 11px;
+    font-weight: bold;
+    position: relative;
+    left: 55px;
+    color: #000;
+    transition: 0.4s linear;
+    transform: scale(1.4);
+    background-color: #fff;
+    width: 150%;
+    border-radius: 5px;
+}
+/*Стили для верхнего текста*/
+
+input{
+margin-left: 5px;
+}
+
+
+label{
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+/*майнер 1*/
+
+.temperature{
+    float: right;
+    margin-right: 2px;
+    height: 32px;
+
+}
+.temperature img{
+    width: 20px;
+}
+/*Стили для блока с температурой*/
+
+#textcenter{
+    float: left;
+    width: 70px;
+    height: 60px;
+    
+    white-space: nowrap;
+    /*весь текст отображается одной строкой*/
+    
+    padding-left: 2px;
+    padding-top: 5px;
+
+    
+}
+#textcenter p{
+margin-bottom: 1px;
+overflow: hidden;
+text-overflow: ellipsis;
+text-align: center;
+
+}
+.one{
+    color: #01A21B;
+    font-weight: 500;
+    font-size: 0.6em;
+}
+.two{
+    color: #000E92;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+.three{
+    
+    color: #03C535;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+/*Стили для центрального текста*/
+#btnicons{
+    
+    float: right;
+    /*border: 1px solid silver;*/
+    width: 105px;
+    height: 60px;
+    padding-right: 3px;
+    padding-top: 5px;
+}
+#btnicons img{
+    float: right;
+    padding: 3px;
+    background-image:none;
+    width: 31px;
+    height: 31px;
+}
+#btnicons i{
+    font-size: 1.4em;
+    padding-left: 8px;
+    padding-top: 3px;
+    color: #494848;
+}
+
+.button img:hover{
+    transform: rotate(720deg);
+    transition: 1.5s;
+}
+/*Стили для кнопок*/
+#textbottom{
+    clear: both;
+    width: 227px;
+    height: 17px;
+    
+    white-space: nowrap;
+    /*весь текст отображается одной строкой*/
+    
+    
+}
+#textbottom p{
+margin:0px;
+padding-top: 3px;
+overflow: hidden;
+text-overflow: ellipsis;
+font-size: 0.7em;
+padding-left: 2px;
+
+
+   
+}
+/*Стили для нижнего текста*/
+
+/*Cтили для Первого блока*/
+
+
+#active{
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 200px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /*Указывает, что контент, 
+    который не помещается в элемент, 
+    будет обрезан(обрезанная часть будет 
+    невидимая).*/
+    /*background-color:#216278;*/
+    box-shadow: 1px 1px 5px 1px;
+    background: linear-gradient(to top,#216278,#fff);
+}
+
+#active:hover{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 215px;
+    height: 125px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /*Указывает, что контент, 
+    который не помещается в элемент, 
+    будет обрезан(обрезанная часть будет 
+    невидимая).*/
+    background:#4284D3;
+
+}    
+ 
+@media(max-width: 1980px){
+    #container{
+        width: 89%;
+    }
+    aside{
+        width: 11%;
+        height: 1080px;
+    }
+}
+@media(max-width: 1440px){
+    #container{
+        width: 85%;
+    }
+    aside{
+        width: 15%;
+    }
+}
+
