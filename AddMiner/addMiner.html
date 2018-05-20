@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>AddMiner</title>
+</head>
+<body>
+   
+    <div id="container">
+        <p><img src="miner.png" alt="Miner" width="65" align="left" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis provident excepturi eligendi incidunt, eveniet placeat aliquam non consequatur odit debitis ducimus sequi molestiae inventore, totam ratione quaerat repellendus in ad!</p><br>
+        <form id="addMiner">
+           <fieldset class="form1">
+               Name: <input type="text" class="name"><br>
+               IP/HostName <input type="text"> Port: <input type="text" ><br>
+               <span>Description</span> 
+               <textarea> </textarea>
+           </fieldset> 
+           
+           <fieldset class="monitor">
+               <legend>Monitor</legend>
+               <input type="checkbox">Auto-refresh every:<input type="number">
+               <label for="time"></label>
+               <select name="time" id="time">
+                   <option value="time1">Seconds</option>
+                   <option value="time2">Minutes</option>
+                   <option value="time3">Hours</option>
+               </select><br>
+               <input type="checkbox">Attempt to resolve problems automatically
+           </fieldset>
+           <button id="btnconnect" type="button">Test Connection</button>
+           
+           <button type="button" id="btnSave">Save</button>
+           <button class="btnClose">Close</button>
+          
+        </form>
+        
+    <!--Модальное окно test-connection-->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Test successful. CGWatcher is configured correctly on this miner.</p>
+                </div>
+            </div>
+    <!--Модальное окно save-->
+             <div id="myModal-save" class="modalSave">
+                <div class="modal-content-save">
+                    <span class="close-save">&times;</span>
+                    <p>SAVED!!!!!!!</p>
+                </div>
+            </div>   
+    </div>
+    
+<!--Скрипт для модального окна-->
+<script src="skript.js"></script>
+<!--
+    <script>
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("btnconnect");
+        var span = document.getElementsByClassName("close")[0];
+        
+        btnconnect.onclick = function(){
+            modal.style.display = "block";
+        }
+        
+        span.onclick = function(){
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function(event){
+            if(event.target == modal){
+                modal.style.display = "none";
+            }
+        }
+    </script>
+-->
+</body>
+</html>

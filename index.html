@@ -22,18 +22,14 @@
             <li><img src="images/miners.png" alt=""  width="21"><a href="">Miners</a></li>
             <li><img src="images/devices.png" width="22"><a href="">Devices</a></li>
             <li><img src="images/charts.png" alt=""  width="21"><a href="">Charts</a></li>
-            <li><img src="images/settings1.png" alt=""  width="22"><a href="">Settings</a></li>
             <li><img src="images/log.png" alt=""  width="21"><a href="">Log</a></li>
-            <li><img src="images/debug.png" alt=""  width="24"><a href="">Debug</a></li>
-            <li><img src="images/about.png" alt=""  width="21"><a href="">About</a></li>
+            <li><img src="images/settings1.png" alt=""  width="22"><a href="">Settings</a></li>
         </ul>
         <ul class="navright">
-            <li>
-                <img src="images/profitability.png" alt=""  width="25"><a href="">Profitability</a>
-            </li>
             <li><img src="images/reload.png" alt=""  width="21"><a href="">Reload</a></li>
-            <li><img src="images/bug.ico" alt=""  width="21"><a href="">Report Bug</a></li>
+            <li><img src="images/sort.png" alt=""  width="21"><a href="">Sort</a></li>
             <li><img src="images/view.png" alt=""  width="19"><a href="">View</a></li>
+            <li><img src="images/logout.png" alt=""  width="19"><a href="">Logout</a></li>
         </ul>
     </nav>
 </header>
@@ -76,7 +72,7 @@
                         <option value="action6">Miner6</option>
                         <option value="action7">Miner7</option>
                     </select>
-                    <input type="submit" value="GO" class="btn" >
+                    <input type="submit" value="GO" class="btn" onclick="GO()" >
                 </div>
                 <div class="sortby">
                     <label for="sort">Sort by:</label>
@@ -95,10 +91,21 @@
 <div id="container">
     <!--Первый блок-->
     <div id="default" >
-        <form>
+        <form >
           <input type="checkbox" id="miner">
-          <label for="miner">Miner 1 </label>
+            <label for="miner" id="element">Miner 1</label>
         </form>
+            <div id="regionPopContent" style="display:none;">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner">
+                130.2.60.215 <br>
+                130.2.60.216 <br>
+                130.2.60.235 <br>
+                Miner 14(127.0.0.1)<br>
+                Accepted: 4359(87.42%)
+                
+                </div>
+            </div>
         <div class="temperature">
            <p id="сelsius">
            <img src="images/if_temperature_5_64820.png">65C</p>
@@ -115,11 +122,11 @@
 
         <div id="btnicons">
             <a href=""><i class="fas fa-play"></i></a>
-            <a href=""><i class="fas fa-stop-circle"></i></a>
-            <a href=""><i class="fas fa-arrow-left"></i></a>
+            <a href=""><img src="images/restart.png" alt=""  width="29"></a>
+            <a href=""><i class="fa fa-retweet"></i></a>
             <a href=""><i class="fab fa-sistrix"></i></a>
-            <a href=""><i class="fas fa-sync-alt "></i></a>
             <a href=""><i class="fas fa-cog "></i></a>
+            <a href=""><i class="fas fa-sync-alt "></i></a>
         </div>
 
         <div id="textbottom">
@@ -130,6 +137,7 @@
 
 
     </div>
+<!--Второй блок -->
     <div class="block1">
         <form>
           <input type="checkbox" id="miner">
@@ -151,11 +159,11 @@
 
         <div id="btnicons">
             <a href=""><i class="fas fa-play"></i></a>
-            <a href=""><i class="fas fa-stop-circle"></i></a>
-            <a href=""><i class="fas fa-arrow-left"></i></a>
+            <a href=""><img src="images/restart.png" alt=""  width="29"></a>
+            <a href=""><i class="fa fa-retweet"></i></a>
             <a href=""><i class="fab fa-sistrix"></i></a>
-            <a href=""><i class="fas fa-sync-alt "></i></a>
             <a href=""><i class="fas fa-cog "></i></a>
+            <a href=""><i class="fas fa-sync-alt "></i></a>
         </div>
 
         <div id="textbottom">
@@ -187,11 +195,11 @@
 
         <div id="btnicons">
             <a href=""><i class="fas fa-play"></i></a>
-            <a href=""><i class="fas fa-stop-circle"></i></a>
-            <a href=""><i class="fas fa-arrow-left"></i></a>
+            <a href=""><img src="images/restart.png" alt=""  width="29"></a>
+            <a href=""><i class="fa fa-retweet"></i></a>
             <a href=""><i class="fab fa-sistrix"></i></a>
-            <a href=""><i class="fas fa-sync-alt "></i></a>
             <a href=""><i class="fas fa-cog "></i></a>
+            <a href=""><i class="fas fa-sync-alt "></i></a>
         </div>
 
         <div id="textbottom">
@@ -223,11 +231,11 @@
 
         <div id="btnicons">
             <a href=""><i class="fas fa-play"></i></a>
-            <a href=""><i class="fas fa-stop-circle"></i></a>
-            <a href=""><i class="fas fa-arrow-left"></i></a>
+            <a href=""><img src="images/restart.png" alt=""  width="29"></a>
+            <a href=""><i class="fa fa-retweet"></i></a>
             <a href=""><i class="fab fa-sistrix"></i></a>
-            <a href=""><i class="fas fa-sync-alt "></i></a>
             <a href=""><i class="fas fa-cog "></i></a>
+            <a href=""><i class="fas fa-sync-alt "></i></a>
         </div>
 
         <div id="textbottom">
@@ -259,11 +267,11 @@
 
         <div id="btnicons">
             <a href=""><i class="fas fa-play"></i></a>
-            <a href=""><i class="fas fa-stop-circle"></i></a>
-            <a href=""><i class="fas fa-arrow-left"></i></a>
+            <a href=""><img src="images/restart.png" alt=""  width="29"></a>
+            <a href=""><i class="fa fa-retweet"></i></a>
             <a href=""><i class="fab fa-sistrix"></i></a>
-            <a href=""><i class="fas fa-sync-alt "></i></a>
             <a href=""><i class="fas fa-cog "></i></a>
+            <a href=""><i class="fas fa-sync-alt "></i></a>
         </div>
 
         <div id="textbottom">
@@ -293,11 +301,11 @@
 
         <div id="btnicons">
             <a href=""><i class="fas fa-play"></i></a>
-            <a href=""><i class="fas fa-stop-circle"></i></a>
-            <a href=""><i class="fas fa-arrow-left"></i></a>
+            <a href=""><img src="images/restart.png" alt=""  width="29"></a>
+            <a href=""><i class="fa fa-retweet"></i></a>
             <a href=""><i class="fab fa-sistrix"></i></a>
-            <a href=""><i class="fas fa-sync-alt "></i></a>
             <a href=""><i class="fas fa-cog "></i></a>
+            <a href=""><i class="fas fa-sync-alt "></i></a>
         </div>
 
         <div id="textbottom">
@@ -305,64 +313,60 @@
                 Last updated: 01.08.18 22-30 PM
             </p>
         </div>
-    </div>    
+    </div> 
+
+    
+<!--Всплывающее окно при наведении-->
+    
 
 
     
-  <!-- Второй блок -->
-  <!-- <div id="active">
-    <form>
-       <input type="checkbox" id="miner2">
-       <label for="miner2">Miner 1 </label>
-    </form>
-
-       <div class="temperature">
-         <p id="сelsius">
-            <img src="images/if_temperature_5_64820.png">69C
-         </p>
-       </div>
-        <div id="texttop">
-          <p>
-            A:d24524B:23123C:9803C:9df803C:9803C:9803
-          </p>
-        </div>
-
-
-    <div id="textcenter">
-      <p class="one"  >Active CGMiner 232sds</p>
-      <p class="two"  >930 Kh/s</p>
-      <p class="three">940 Kh/s</p>
-    </div>
-
-
-    <div id="btnicons">
-        <a href=""><i class="fas fa-play"></i></a>
-        <a href=""><i class="fas fa-stop-circle"></i></a>
-        <a href=""><i class="fas fa-arrow-left"></i></a>
-        <a href=""><i class="fab fa-sistrix"></i></a>
-        <a href=""><i class="fas fa-sync-alt "></i></a>
-        <a href=""><i class="fas fa-cog "></i></a>
-    </div>
-
-    <div id="textbottom">
-      <p>
-        Last updated: 01.08.18 22-30 PM
-      </p>
-    </div>
-
-
-   </div> -->
-     <!-- для примера -->
-
+ 
 
 
     
     <!-- конец контейнера -->
 </div>
+
+<script language="javascript">
+ 
+function GO()
+ 
+{
+ 
+win = window.open("AddMiner/addMiner.html","win","height=410,width=610");
+ 
+}
+ 
+//-->
+ 
+</script>
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script>
+        $("#element").popover({
+    trigger: "manual",
+    html: true,
+    content: $('#regionPopContent').html()
+})
+    .on("mouseenter", function () {
+    var _this = this;
+    $(this).popover("show");
+    $(".popover").on("mouseleave", function () {
+        $(_this).popover('hide');
+    });
+}).on("mouseleave", function () {
+    var _this = this;
+    setTimeout(function () {
+        if (!$(".popover:hover").length) {
+            $(_this).popover("hide")
+        }
+    }, 100);
+});  
+    </script>
   </body>
 </html>

@@ -349,17 +349,16 @@ text-align: center;
     
     float: right;
     /*border: 1px solid silver;*/
-    width: 105px;
+    width: 107px;
     height: 60px;
     padding-right: 3px;
     padding-top: 5px;
 }
 #btnicons img{
     float: right;
-    padding: 3px;
+    padding-right: 5px;
     background-image:none;
-    width: 31px;
-    height: 31px;
+    
 }
 #btnicons i{
     font-size: 1.4em;
@@ -433,6 +432,11 @@ padding-left: 2px;
 
 }    
  
+.tooltip-inner{
+    margin: -7px -10px;
+    width: 100px;
+    
+}
 @media(max-width: 1980px){
     #container{
         width: 89%;
