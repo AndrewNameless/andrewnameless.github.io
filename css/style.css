@@ -672,8 +672,8 @@ footer p{
     }
 
     #about_us{
-        background-position: 334px 175px, 91px 100% , center;
-        background-size: 114px 70px, 320px 320px, auto;
+        background-position: 98% 217px, 59% 100% , center;
+    background-size: 80px 50px, 300px 300px, auto;
         min-height: 500px;
     }
 
